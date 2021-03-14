@@ -1,9 +1,11 @@
 pipeline{
-    agent any
+    agent {
+        docker{ image "node" }
+    }
     stages{
         stage('Build'){
             steps{
-                sh "nom install"
+                sh "npm install"
             }
         }
         stage('Tests'){
