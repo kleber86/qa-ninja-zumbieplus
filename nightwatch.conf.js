@@ -42,11 +42,11 @@ module.exports = {
         waitForConditionTimeout: defaultTimeout
       },
       webdriver: {
-        server_path: chromedriver.path,
+        server_path: '.\\node_modules\\.bin\\geckodrivers',
         port: 9515
       },
       desiredCapabilities: {
-        browserName: 'chrome',
+        browserName: 'firefox',
         chromeOptions: {
           w3c: false,
           args: ['--headless', '--no-sandbox']
