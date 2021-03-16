@@ -1,7 +1,7 @@
 let userActions = {
     esperaUsuarioLogado: function(nome) {
         return this
-        .waitForElementVisible('@userInfo', 3000)
+        .waitForElementVisible('@userInfo', 10000)
         .assert.containsText('@userInfo', nome)
     }
 }

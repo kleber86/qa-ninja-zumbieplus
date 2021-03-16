@@ -2,7 +2,7 @@ let createActions = {
     createForm: function () {
         return this
             .click('@addButton')
-            .waitForElementVisible('@movieForm', 3000)
+            .waitForElementVisible('@movieForm', 10000)
     },
     selectStatus: function (status) {
         return this
