@@ -1,7 +1,7 @@
 require('babel-core/register')
 
 const chromedriver = require('chromedriver')
-require('geckodriver')
+//require('geckodriver')
 
 const testUrl = 'http://zombie-web:5000'
 const defaultTimeout = 15000
@@ -42,18 +42,18 @@ module.exports = {
         waitForConditionTimeout: defaultTimeout
       },
       webdriver: {
-        server_path: './node_modules/.bin/geckodrivers',
+        server_path: chromedriver.path,
         port: 9515
       },
       desiredCapabilities: {
-        browserName: 'firefox',
+        browserName: 'chrome',
         chromeOptions: {
           w3c: false,
           args: ['--headless', '--no-sandbox']
         }
       }
     },
-
+/*
     firefox: {
       launch_url: testUrl,
       globals: {
@@ -67,6 +67,6 @@ module.exports = {
         browserName: "firefox",
         acceptInsecureCerts: true
       }
-    }
+    }*/
   }
 }
