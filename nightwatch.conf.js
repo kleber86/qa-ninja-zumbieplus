@@ -20,14 +20,14 @@ module.exports = {
       enabled: true,
       workers: 4
     },
-  */
+  
 
   screenshots:{
     enabled: true,
     on_failure: true,
     on_error: true,
     path: 'testes_output/'
-  },
+  },*/
   
   test_settings: {
     default: {
